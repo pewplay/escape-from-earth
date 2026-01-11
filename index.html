@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        max-height: 99.6vh;
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <title>Escape from Earth</title>
+</head>
+
+<body>
+
+   
+    <div id="element">
+        <div id="go-button" style="position: absolute; left: 0;"><i class="material-icons"
+            style="font-size:48px;color:white">fullscreen</i></div>
+            <script>
+
+                /* Get into full screen */
+                function GoInFullscreen(element) {
+                    if (element.requestFullscreen)
+                        element.requestFullscreen();
+                    else if (element.mozRequestFullScreen)
+                        element.mozRequestFullScreen();
+                    else if (element.webkitRequestFullscreen)
+                        element.webkitRequestFullscreen();
+                    else if (element.msRequestFullscreen)
+                        element.msRequestFullscreen();
+        
+        
+                    screen.orientation.lock('landscape').then(res => console.log(res)).catch(err => console.log(err))
+                }
+        
+                /* Get out of full screen */
+                function GoOutFullscreen() {
+                    if (document.exitFullscreen)
+                        document.exitFullscreen();
+                    else if (document.mozCancelFullScreen)
+                        document.mozCancelFullScreen();
+                    else if (document.webkitExitFullscreen)
+                        document.webkitExitFullscreen();
+                    else if (document.msExitFullscreen)
+                        document.msExitFullscreen();
+        
+                }
+        
+                /* Is currently in full screen or not */
+                function IsFullScreenCurrently() {
+                    var full_screen_element = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement || null;
+        
+                    // If no element is in full-screen
+                    if (full_screen_element === null)
+                        return false;
+                    else
+                        return true;
+                }
+        
+                $("#go-button").on('click', function () {
+                    if (IsFullScreenCurrently())
+                        GoOutFullscreen();
+                    else
+                        GoInFullscreen($("body").get(0));
+                });
+        
+        
+        
+            </script>
+       
+    </div>
+    <script type="text/javascript" src="vendors.bundle.js"></script>
+    <script type="text/javascript" src="bundle.min.js"></script>
+</body>
+
+</html>
