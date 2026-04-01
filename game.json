@@ -1,0 +1,8 @@
+{
+  "title": "Escape from Earth",
+  "description": "Pilot your spaceship and dodge asteroids to escape the planet.",
+  "keywords": ["space", "escape", "asteroids", "action", "arcade"],
+  "category": "Action",
+  "author": "PewPlay",
+  "playMode": "SinglePlayer"
+}
