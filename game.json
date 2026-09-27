@@ -2,6 +2,32 @@
   "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
   "title": "Escape from Earth",
   "description": "Pilot your spaceship and dodge asteroids to escape the planet.",
+  "about": "Escape from Earth is a browser game where you pilot the spacecraft and avoid hazards as you try to escape Earth.\n\nStart a round in your browser and use the controls below to play.",
+  "howToPlay": "Pilot the spacecraft and avoid hazards as you try to escape Earth.",
+  "controls": [
+    {
+      "input": "On-screen game controls",
+      "action": "Steer the spacecraft"
+    },
+    {
+      "input": "Fullscreen",
+      "action": "Expand the game"
+    }
+  ],
+  "tips": [
+    "Use on-screen game controls to steer the spacecraft.",
+    "Try another round to practice the timing and strategy."
+  ],
+  "faq": [
+    {
+      "question": "How do I play Escape from Earth?",
+      "answer": "Pilot the spacecraft and avoid hazards as you try to escape Earth."
+    },
+    {
+      "question": "Can I play Escape from Earth in a browser?",
+      "answer": "Yes. Open the game page and play without installing an app."
+    }
+  ],
   "category": "Action",
   "tags": [
     "space",
@@ -10,6 +36,9 @@
     "action",
     "arcade"
   ],
-  "author": "PewPlay",
-  "playMode": "SinglePlayer"
+  "playMode": "SinglePlayer",
+  "orientation": "any",
+  "cover": "cover.png",
+  "draft": true,
+  "author": "PewPlay"
 }
