@@ -1,44 +1,58 @@
 {
   "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
   "title": "Escape from Earth",
-  "description": "Pilot your spaceship and dodge asteroids to escape the planet.",
-  "about": "Escape from Earth is a browser game where you pilot the spacecraft and avoid hazards as you try to escape Earth.\n\nStart a round in your browser and use the controls below to play.",
-  "howToPlay": "Pilot the spacecraft and avoid hazards as you try to escape Earth.",
+  "description": "Help Eliter the little dinosaur outrun a homing missile, jump over walls and grab coins across four pixel-art stages in this free browser game.",
+  "about": "Escape from Earth is a pixel-art auto-runner with a story. Eliter, a small dinosaur, comes back to Earth hoping to find it green and peaceful, but discovers factories and armies instead, and soon a missile is on his tail. He runs on his own: your only job is to time his jumps.\n\nEach stage is a hand-built level full of floating platforms, tall walls and coins arranged in arcs that hint at the perfect jump. Get stuck against a wall and the missile catches up and explodes; fall off the level and the run is over too. Reach the end of a stage to blow up the missile and earn a bonus, then move on to the next one. After the fourth stage the loop starts again at a higher speed.\n\nYour five best runs are saved as a high score table, so there is always a reason to try one more time.",
+  "howToPlay": "Eliter runs to the right automatically while a missile chases him. Press the Up arrow, click or tap to jump, and hold it for a higher jump. Use the platforms to climb over walls and collect coins for points. Reach the end of the stage to destroy the missile and earn a bonus; getting hit by the missile or falling ends the game.",
   "controls": [
     {
-      "input": "On-screen game controls",
-      "action": "Steer the spacecraft"
+      "input": "↑",
+      "action": "Jump (hold for a higher jump)"
     },
     {
-      "input": "Fullscreen",
-      "action": "Expand the game"
+      "input": "Click / Tap",
+      "action": "Jump (hold for a higher jump)"
+    },
+    {
+      "input": "Any key / Click",
+      "action": "Skip the intro and start or retry"
     }
   ],
   "tips": [
-    "Use on-screen game controls to steer the spacecraft.",
-    "Try another round to practice the timing and strategy."
+    "Follow the coin arcs: they show where a jump should start and land.",
+    "Tall walls cannot be cleared from the ground, so jump onto the nearest platform first and leap from there.",
+    "Release the jump early for short hops, which keeps you low and fast between platforms.",
+    "Do not stall against a wall: every moment you lose lets the missile get closer."
   ],
   "faq": [
     {
-      "question": "How do I play Escape from Earth?",
-      "answer": "Pilot the spacecraft and avoid hazards as you try to escape Earth."
+      "question": "Is Escape from Earth free to play?",
+      "answer": "Yes. Escape from Earth is completely free and runs in your browser with no download or sign-up."
     },
     {
-      "question": "Can I play Escape from Earth in a browser?",
-      "answer": "Yes. Open the game page and play without installing an app."
+      "question": "Can I play Escape from Earth on a phone or tablet?",
+      "answer": "Yes. Tap and hold anywhere on the screen to jump. The game is wide, so it is best played with the device turned sideways."
+    },
+    {
+      "question": "Are my high scores saved?",
+      "answer": "Yes. Your five best runs, with their points and speed, are saved in your browser on this device and shown on the game over screen."
     }
   ],
-  "category": "Action",
+  "category": "Arcade",
   "tags": [
-    "space",
-    "escape",
-    "asteroids",
-    "action",
-    "arcade"
+    "runner",
+    "pixel art",
+    "dinosaur",
+    "platformer",
+    "jump"
   ],
+  "author": "PewPlay",
   "playMode": "SinglePlayer",
-  "orientation": "any",
+  "orientation": "landscape",
   "cover": "cover.png",
-  "draft": true,
-  "author": "PewPlay"
+  "screenshots": [
+    "screenshots/1.png",
+    "screenshots/2.png",
+    "screenshots/3.png"
+  ]
 }
