@@ -1,8 +1,15 @@
 {
+  "$schema": "https://raw.githubusercontent.com/pewplay/pewplay/main/schema/game.schema.json",
   "title": "Escape from Earth",
   "description": "Pilot your spaceship and dodge asteroids to escape the planet.",
-  "keywords": ["space", "escape", "asteroids", "action", "arcade"],
   "category": "Action",
+  "tags": [
+    "space",
+    "escape",
+    "asteroids",
+    "action",
+    "arcade"
+  ],
   "author": "PewPlay",
   "playMode": "SinglePlayer"
 }
